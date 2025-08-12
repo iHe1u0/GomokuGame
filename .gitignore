@@ -1,0 +1,62 @@
+# ========== Unity ==========
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+
+# 自动生成的 Lightmap、NavMesh 数据等
+LightmapSnapshot/
+Lightmap-*
+LightingData.asset
+OcclusionCullingData.asset
+
+# VS / VSCode 生成的文件
+.vscode/
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# Rider 生成的文件
+.idea/
+
+# 运行时生成的元数据
+sysinfo.txt
+
+# Unity 生成的崩溃日志
+*.stacktrace
+
+# 其他可能生成的大文件
+*.apk
+*.aab
+*.unitypackage
+
+# ========== OS 临时文件 ==========
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ========== 其他缓存 ==========
+# Crashlytics / Firebase
+crashlytics-build.properties
+
+# Unity 初学者教程生成的文件
+Assets/TextMesh Pro/*
