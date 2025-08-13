@@ -7,7 +7,7 @@ public class UIManager : MonoBehaviour
     public Toggle aiToggle;
     public Button restartBtn;
 
-    void Start()
+    public void Start()
     {
         if (aiToggle != null)
         {
@@ -17,14 +17,14 @@ public class UIManager : MonoBehaviour
         if (restartBtn != null) restartBtn.onClick.AddListener(() => GameManager.Instance.RestartGame());
     }
 
-    void Update()
+    public void Update()
     {
         if (infoText != null)
         {
-            if (GameManager.Instance == null) return;
+            if (GameManager.Instance == null) { return; }
             infoText.text = GameManager.Instance.currentTurn == Stone.Black ? "黑方回合" : "白方回合";
             if (GameManager.Instance != null && GameManager.Instance.playerIsBlack == false)
-                infoText.text += " (你执白)";
+            { infoText.text += " (你执白)"; }
         }
     }
 }

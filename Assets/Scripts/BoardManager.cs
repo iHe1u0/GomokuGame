@@ -60,7 +60,9 @@ public class BoardManager : MonoBehaviour
     public IEnumerable<Cell> AllCells()
     {
         for (int y = 0; y < height; y++)
+        {
             for (int x = 0; x < width; x++)
-                yield return cells[x, y];
+            { yield return cells[x, y]; }
+        }
     }
 }

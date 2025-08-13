@@ -46,7 +46,7 @@ public class Cell : MonoBehaviour, IPointerClickHandler
         // notify board manager
         BoardManager.Instance.OnCellClicked(this);
     }
-    void OnMouseDown()
+    public void OnMouseDown()
     {
         BoardManager.Instance.OnCellClicked(this);
     }
